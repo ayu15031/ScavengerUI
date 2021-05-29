@@ -1,0 +1,13 @@
+type Document {
+  id: ID!
+  key: Int
+  name: String
+  description: String
+  data: String
+  highlights: [String]
+}
+
+type Query {
+  get_docs(query: String!): [Document!]!
+  info: String!
+}
